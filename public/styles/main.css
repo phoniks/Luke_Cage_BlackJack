@@ -64,3 +64,49 @@ img {
   width: 400px;
   margin-left: -30px;
 }
+
+.textBox {
+  background-color: #ffffc0;
+  border-color: #006000 #90f090 #90f090 #006000;
+  border-style: solid;
+  border-width: 1px;
+  clear: right;
+  color: #000000;
+  float: right;
+  font-family: "Times New Roman", serif;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: .5em;
+  padding: .1em;
+  text-align: center;
+  width: 12em;
+
+}
+
+button {
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+#controlArea {
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+input.button {
+  margin-top: .25em
+  width: 8em;
+}
