@@ -2,7 +2,7 @@
 
 # Description 
 
-- [ ] Marvel's Luke Cage needs your help against Cottonmouth, Diamondback, Shades, Mariah, and all of the corrupt criminals who are messing up Harlem's good name. First, Luke needs some cash to save Pops' barber shop. Help Luke by making sure that he wins all of the cash from Harlem Paradise's coffers and breaks Cottonmouth's bank.
+Marvel's Luke Cage needs your help against Cottonmouth, Diamondback, Shades, Mariah, and all of the corrupt criminals who are messing up Harlem's good name. First, Luke needs some cash to save Pops' barber shop. Help Luke by making sure that he wins all of the cash from Harlem Paradise's coffers and breaks Cottonmouth's bank.
 
 # Specs
 
