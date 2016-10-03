@@ -1,0 +1,32 @@
+{
+  "name": "luke_cage_blackjack",
+  "version": "1.0.0",
+  "description": "Marvel's Luke Cage needs your help against Cottonmouth, Diamondback, Shades, Mariah, and all of the corrupt criminals who are messing up Harlem's good name. First, Luke needs some cash to save Pops' barber shop. Help Luke by making sure that he wins all of the cash from Harlem's Paradise, and breaks Cottonmouth's bank!",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoniks/Luke_Cage_BlackJack.git"
+  },
+  "keywords": [
+    "blackjack",
+    "luke",
+    "cage",
+    "marvel",
+    "Learner's",
+    "Guild"
+  ],
+  "author": "John Hopkins, Stephan Weber, Phil Lorenzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phoniks/Luke_Cage_BlackJack/issues"
+  },
+  "homepage": "https://github.com/phoniks/Luke_Cage_BlackJack#readme",
+  "dependencies": {
+    "ecstatic": "^2.1.0",
+    "routes": "^2.1.0"
+  }
+}
