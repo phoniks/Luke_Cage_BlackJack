@@ -6,6 +6,7 @@
   <script src="lodash.js"></script>
   <script src="deck.js"></script>
   <script src="card.js"></script>
+  <script src="round.js"></script>
 
 
 Try it Yourself »
@@ -13,14 +14,12 @@ Try it Yourself »
 <script>
   var newDeck = createDeck();
 
-  window.onload = function () {
-  for (var i = 0; i < newDeck.length; i++) {
-  console.log(newDeck[i]);
-}
+  window.onload = roundCycle();
+
 console.log(newDeck.length);
 document.getElementById("dealer 1").innerHTML = "Dealer's first card " + newDeck[0].suit + "  " + newDeck[0].rank;
 document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck[2].suit + "  " + newDeck[2].rank;
-}
+
 </script>
 
 
@@ -53,74 +52,69 @@ document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck
   </div>
   <div class="card">
     <div class="front" style="visibility:hidden;"></div>
-    <div class="index">K<br />&clubs;</div>
-    <div class="index">Q<br />&clubs;</div>
-    <div class="index">J<br />&clubs;</div>
-    <div class="index">10<br />&clubs;</div>
-    <div class="index">9<br />&clubs;</div>
-    <div class="index">8<br />&clubs;</div>
-    <div class="index">7<br />&clubs;</div>
-    <div class="index">6<br />&clubs;</div>
-    <div class="index">5<br />&clubs;</div>
-    <div class="index">4<br />&clubs;</div>
-    <div class="index">3<br />&clubs;</div>
-    <div class="index">2<br />&clubs;</div>
-    <div class="index">1<br />&clubs;</div>
-    <div class="index">A<br />&spades;</div>
-    <div class="index">K<br />&spades;</div>
-    <div class="index">Q<br />&spades;</div>
-    <div class="index">J<br />&spades;</div>
-    <div class="index">10<br />&spades;</div>
-    <div class="index">9<br />&spades;</div>
-    <div class="index">8<br />&spades;</div>
-    <div class="index">7<br />&spades;</div>
-    <div class="index">6<br />&spades;</div>
-    <div class="index">5<br />&spades;</div>
-    <div class="index">4<br />&spades;</div>
-    <div class="index">3<br />&spades;</div>
-    <div class="index">2<br />&spades;</div>
-    <div class="index">1<br />&spades;</div>
+    <div class="113">K<br />&clubs;</div>
+    <div class="112">Q<br />&clubs;</div>
+    <div class="111">J<br />&clubs;</div>
+    <div class="110">10<br />&clubs;</div>
+    <div class="109">9<br />&clubs;</div>
+    <div class="108">8<br />&clubs;</div>
+    <div class="107">7<br />&clubs;</div>
+    <div class="106">6<br />&clubs;</div>
+    <div class="105">5<br />&clubs;</div>
+    <div class="104">4<br />&clubs;</div>
+    <div class="103">3<br />&clubs;</div>
+    <div class="102">2<br />&clubs;</div>
+    <div class="100">A<br />&clubs;</div>
+    <div class="200">A<br />&spades;</div>
+    <div class="213">K<br />&spades;</div>
+    <div class="212">Q<br />&spades;</div>
+    <div class="211">J<br />&spades;</div>
+    <div class="210">10<br />&spades;</div>
+    <div class="209">9<br />&spades;</div>
+    <div class="208">8<br />&spades;</div>
+    <div class="207">7<br />&spades;</div>
+    <div class="206">6<br />&spades;</div>
+    <div class="205">5<br />&spades;</div>
+    <div class="204">4<br />&spades;</div>
+    <div class="203">3<br />&spades;</div>
+    <div class="201">2<br />&spades;</div>
   </div>
 </div>
 
   <div class="card" style="visibility:hidden;">
     <div class="front red">
       <img class="face" src="http://cdn3.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/0589_tiara_103_unit_01503r_-h_2016.jpg" alt="" />
-      <div class="index">A<br />&diams;</div>
+      <div class="300">A<br />&diams;</div>
       <img class="face" src="http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg" alt="" />
-      <div class="index">K<br />&diams;</div>
-      <div class="index">Q<br />&diams;</div>
-      <div class="index">J<br />&diams;</div>
-      <div class="index">10<br />&diams;</div>
-      <div class="index">9<br />&diams;</div>
-      <div class="index">8<br />&diams;</div>
-      <div class="index">7<br />&diams;</div>
-      <div class="index">6<br />&diams;</div>
-      <div class="index">5<br />&diams;</div>
-      <div class="index">4<br />&diams;</div>
-      <div class="index">3<br />&diams;</div>
-      <div class="index">2<br />&diams;</div>
-      <div class="index">1<br />&diams;</div>
-      <div class="index">A<br />&hearts;</div>
-      <div class="index">K<br />&hearts;</div>
-      <div class="index">Q<br />&hearts;</div>
-      <div class="index">J<br />&hearts;</div>
-      <div class="index">10<br />&hearts;</div>
-      <div class="index">9<br />&hearts;</div>
-      <div class="index">8<br />&hearts;</div>
-      <div class="index">7<br />&hearts;</div>
-      <div class="index">6<br />&hearts;</div>
-      <div class="index">5<br />&hearts;</div>
-      <div class="index">4<br />&hearts;</div>
-      <div class="index">3<br />&hearts;</div>
-      <div class="index">2<br />&hearts;</div>
-      <div class="index">1<br />&hearts;</div>
+      <div class="313">K<br />&diams;</div>
+      <div class="312">Q<br />&diams;</div>
+      <div class="311">J<br />&diams;</div>
+      <div class="310">10<br />&diams;</div>
+      <div class="309">9<br />&diams;</div>
+      <div class="308">8<br />&diams;</div>
+      <div class="307">7<br />&diams;</div>
+      <div class="306">6<br />&diams;</div>
+      <div class="305">5<br />&diams;</div>
+      <div class="304">4<br />&diams;</div>
+      <div class="303">3<br />&diams;</div>
+      <div class="302">2<br />&diams;</div>
+      <div class="400">A<br />&hearts;</div>
+      <div class="413">K<br />&hearts;</div>
+      <div class="412">Q<br />&hearts;</div>
+      <div class="411">J<br />&hearts;</div>
+      <div class="410">10<br />&hearts;</div>
+      <div class="409">9<br />&hearts;</div>
+      <div class="408">8<br />&hearts;</div>
+      <div class="407">7<br />&hearts;</div>
+      <div class="406">6<br />&hearts;</div>
+      <div class="405">5<br />&hearts;</div>
+      <div class="404">4<br />&hearts;</div>
+      <div class="403">3<br />&hearts;</div>
+      <div class="402">2<br />&hearts;</div>
     </div>
 </div>
 
-<<<<<<< 158a5b2cdb3c293443a784cb9d7bc8e0e36b2cfa
 
-=======
   <form id="controls" action>
     <div id="controlArea">
       <div id="credits" class="textBox dollars">Credits</div>
@@ -132,7 +126,6 @@ document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck
       <input id="decrease bet" class="button" type="reset" value="Decrease Bet">
     </div>
   </form>
->>>>>>> Created a simple form that is still WIP
 </body>
 
 </html>

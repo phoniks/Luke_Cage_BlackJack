@@ -19,6 +19,165 @@ h3 {
   margin-top: 300px;
 }
 
+.player0 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 0;
+  visibility: hidden;
+}
+
+.player1 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 9.0em;
+  visibility: hidden;
+}
+
+.player2 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 18.0em;
+  visibility: hidden;
+}
+.player3 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 27.0em;
+  visibility: hidden;
+}
+.player4 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 36.0em;
+  visibility: hidden;
+}
+.player5 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 45.0em;
+  visibility: hidden;
+}
+.player6 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 54.0em;
+  visibility: hidden;
+}
+.player7 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 63.0em;
+  visibility: hidden;
+}
+.player8 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 72.0em;
+  visibility: hidden;
+}
+.player9 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 81.0em;
+  visibility: hidden;
+}
+.player10 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 90.0em;
+  visibility: hidden;
+}
+.dealer0 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 0;
+  visibility: hidden;
+}
+
+.dealer1 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 9.0em;
+  visibility: hidden;
+}
+
+.dealer2 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 18.0em;
+  visibility: hidden;
+}
+.dealer3 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 27.0em;
+  visibility: hidden;
+}
+.dealer4 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 36.0em;
+  visibility: hidden;
+}
+.dealer5 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 45.0em;
+  visibility: hidden;
+}
+.dealer6 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 54.0em;
+  visibility: hidden;
+}
+.dealer7 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 63.0em;
+  visibility: hidden;
+}
+.dealer8 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 72.0em;
+  visibility: hidden;
+}
+.dealer9 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 81.0em;
+  visibility: hidden;
+}
+.dealer10 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 90.0em;
+  visibility: hidden;
+}
+
 .card {
   background-image: url("http://img.cinemablend.com/cb/0/d/4/8/3/3/0d4833b31611c7b082dac9d1c72094a9cdbfb50ab21588564e3f294b3fed91cc.jpg");
   border-color: #808080 #000000 #000000 #808080;
