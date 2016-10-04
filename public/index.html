@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="./styles/main.css">
+
 <head>
+  <script src="lodash.js"></script>
+  <script src="deck.js"></script>
+  <script src="card.js"></script>
+
+
+Try it Yourself »
+
+<script>
+  var newDeck = createDeck();
+
+  window.onload = function () {
+  for (var i = 0; i < newDeck.length; i++) {
+  console.log(newDeck[i]);
+}
+console.log(newDeck.length);
+document.getElementById("dealer 1").innerHTML = "Dealer's first card " + newDeck[0].suit + "  " + newDeck[0].rank;
+document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck[2].suit + "  " + newDeck[2].rank;
+}
+</script>
+
 
 </head>
 
@@ -22,6 +43,8 @@
     <div class="front" style="visibility:hidden;"></div>
   </div>
 </div>
+<span id="dealer 1"></span>
+<span id="dealer 2"></span>
 
 <div class="player-field">
   <h4> LUKE </h4>
@@ -94,6 +117,7 @@
       <div class="index">1<br />&hearts;</div>
     </div>
 </div>
+
 
 </body>
 
