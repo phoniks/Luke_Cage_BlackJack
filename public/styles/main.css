@@ -13,6 +13,7 @@ h1 {
   position: relative;
   text-align: center;
   font-family: 'Ruslan Display', cursive;
+  text-shadow: 1px 1px 2px yellow;
 }
 
 h2 {
@@ -21,16 +22,36 @@ h2 {
   bottom: 60px;
   left: 0px;
   width: 100%;
+  border-color: yellow;
+  border: 0.5px;
+  text-shadow: 1px 1px 2px yellow;
 }
 
-.player-field {
+#player-field {
   position: absolute;
   margin-top: 400px;
 }
 
-.dealer-field {
+#dealer-field {
   position: absolute;
   margin-top: 100px;
+}
+
+#controls {
+  position: absolute;
+  margin-top: 320px;
+  background-color: black;
+  width: 100%;
+}
+
+.button {
+  background-color: yellow;
+  color: black;
+}
+
+button {
+  background-color: yellow;
+  color: black;
 }
 
 .dealer0 {
@@ -68,7 +89,6 @@ h2 {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 20.0em;
-  visibility: hidden;
 }
 .dealer5 {
   position: absolute;
@@ -290,6 +310,7 @@ h2 {
   width: 3.75em;
   height: 3.25em;
   margin-left: 5px;
+  border-color: yellow;
 }
 
 .image {
@@ -312,11 +333,11 @@ h2 {
 }
 
 .jack {
-  background-image: url("http://cdn3.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/0589_tiara_103_unit_01503r_-h_2016.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2016/09/29081135/LukeCage_Shades_700x300.jpg");
 }
 
 .front {
-  background-image: url("http://www.slate.com/content/dam/slate/articles/arts/television/2016/10/161003_TV_Luke-Cage.jpg.CROP.promo-xlarge2.jpg");
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
 
 .textBox {

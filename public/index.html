@@ -14,7 +14,7 @@
 
 <h1> BLACKJACK</h1>
 
-<div class="dealer-field">
+<div id="dealer-field">
   <h2> SHADES </h2>
   <div class="card" style="visibility:hidden;">
     <div class="back" style="visibility:hidden;"></div>
@@ -24,24 +24,24 @@
   </div>
 </div>
 
-<div class="player-field">
+<div id="player-field">
   <h1> LUKE </h1>
   <div class="card" style="visibility:hidden;">
     <div class="back"></div>
   </div>
-    <div class=" card dealer0 image ace">
+    <div class=" card player0 image ace">
       <h2>A<br />&clubs;</h2>
       </div>
-    <div class=" card dealer1 image king">
+    <div class=" card player1 image king">
       <h2>K<br />&clubs;</h2>
       </div>
-    <div class=" card dealer2 image queen">
+    <div class=" card player2 image queen">
       <h2>Q<br />&clubs;</h2>
       </div>
-    <div class=" card dealer3 image jack">
+    <div class=" card player3 image jack">
       <h2>J<br />&clubs;</h2>
       </div>
-    <div class=" card dealer4 image front" style="visibility: hidden">
+    <div class=" card player4 image front">
         <h2>10<br />&clubs;</h2>
       </div>
     </div>
@@ -49,19 +49,19 @@
 </div>
 
 <div class="card" style="visibility:visible;">
-      <div class=" card player0 image red ace">
+      <div class=" card dealer0 image red ace">
         <h2>A<br />&diams;</h2>
         </div>
-      <div class=" card player1 image red king">
+      <div class=" card dealer1 image red king">
         <h2>K<br />&diams;</h2>
         </div>
-      <div class=" card player2 image red queen">
+      <div class=" card dealer2 image red queen">
         <h2>Q<br />&diams;</h2>
         </div>
-      <div class=" card player3 image red jack">
+      <div class=" card dealer3 image red jack">
         <h2>J<br />&diams;</h2>
         </div>
-      <div class=" card image red front" style="visibility: hidden">
+      <div class=" card dealer4 image red front">
           <h2>10<br />&diams;</h2>
         </div>
       <div class=" card image red ace" style="visibility: hidden">
@@ -85,7 +85,7 @@
     <div id="controlArea">
       <div id="credits" class="textBox dollars">Credits</div>
       <div id="default" class="textBox dollars">Default Bet</div>
-      <input type="button" value="Deal" onclick="newRound()">
+      <input id="deal" class="button" type="reset" value="Deal" >
       <input id="hit" class="button" type="reset" value="Hit">
       <input id="stay" class="button" type="reset" value="Stay" >
       <input id="double" class="button" type="reset" value="Double" >
