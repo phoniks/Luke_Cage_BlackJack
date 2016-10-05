@@ -136,6 +136,14 @@ deal(){
  }
 }
 
+function displayDealerCard () {
+  document.
+}
+
+function displayPlayerCard () {
+
+}
+
 function newRound() {
   let player = new Player({name: 'S. Weber'})
   let dealer = new Dealer({name: 'Dealer'})

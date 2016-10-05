@@ -4,9 +4,8 @@ header {
   background-image: url("http://img.cinemablend.com/cb/0/d/4/8/3/3/0d4833b31611c7b082dac9d1c72094a9cdbfb50ab21588564e3f294b3fed91cc.jpg");
   background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 100px;
   width: 100%;
-  padding: 05px;
   font-family: 'Ruslan Display', cursive;
 }
 
@@ -18,96 +17,26 @@ h1 {
 
 h2 {
   font-family: 'Ruslan Display', cursive;
+  position: absolute;;
+  bottom: 60px;
+  left: 0px;
+  width: 100%;
 }
 
 .player-field {
   position: absolute;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
-.player0 {
+.dealer-field {
   position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 0;
-  visibility: visible;
+  margin-top: 100px;
 }
 
-.player1 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 9.0em;
-  visibility: visible;
-}
-
-.player2 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 18.0em;
-  visibility: hidden;
-}
-.player3 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 27.0em;
-  visibility: hidden;
-}
-.player4 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 36.0em;
-  visibility: hidden;
-}
-.player5 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 45.0em;
-  visibility: hidden;
-}
-.player6 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 54.0em;
-  visibility: hidden;
-}
-.player7 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 63.0em;
-  visibility: hidden;
-}
-.player8 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 72.0em;
-  visibility: hidden;
-}
-.player9 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 81.0em;
-  visibility: hidden;
-}
-.player10 {
-  position: absolute;
-  padding-top: 20px;
-  margin-top: 150px;
-  margin-left: 90.0em;
-  visibility: hidden;
-}
 .dealer0 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 0;
   visibility: visible;
 }
@@ -115,72 +44,151 @@ h2 {
 .dealer1 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
-  margin-left: 9.0em;
-  visibility: hidden;
+  margin-top: 150px;
+  margin-left: 5.0em;
+  visibility: visible;
 }
 
 .dealer2 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
-  margin-left: 18.0em;
-  visibility: hidden;
+  margin-top: 150px;
+  margin-left: 10.0em;
+  visibility: visible;
 }
 .dealer3 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
-  margin-left: 27.0em;
-  visibility: hidden;
+  margin-top: 150px;
+  margin-left: 15.0em;
+  visibility: visible;
 }
 .dealer4 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
-  margin-left: 36.0em;
+  margin-top: 150px;
+  margin-left: 20.0em;
   visibility: hidden;
 }
 .dealer5 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
-  margin-left: 45.0em;
+  margin-top: 150px;
+  margin-left: 25.0em;
   visibility: hidden;
 }
 .dealer6 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 54.0em;
   visibility: hidden;
 }
 .dealer7 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 63.0em;
   visibility: hidden;
 }
 .dealer8 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 72.0em;
   visibility: hidden;
 }
 .dealer9 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 81.0em;
   visibility: hidden;
 }
 .dealer10 {
   position: absolute;
   padding-top: 20px;
-  margin-top: 25px;
+  margin-top: 150px;
   margin-left: 90.0em;
+  visibility: hidden;
+}
+.player0 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 0;
+  /*visibility: hidden;*/
+}
+
+.player1 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 5em;
+  /*visibility: hidden;*/
+}
+
+.player2 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 10em;
+  /*visibility: hidden;*/
+}
+.player3 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 15em;
+  /*visibility: hidden;*/
+}
+.player4 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 20em;
+  /*visibility: hidden;*/
+}
+.player5 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 25em;
+  visibility: hidden;
+}
+.player6 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 30em;
+  visibility: hidden;
+}
+.player7 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 35em;
+  visibility: hidden;
+}
+.player8 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 40em;
+  visibility: hidden;
+}
+.player9 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 45em;
+  visibility: hidden;
+}
+.player10 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 50em;
   visibility: hidden;
 }
 
@@ -259,8 +267,12 @@ h2 {
 
 .back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 4.75em;
+  height: 7.00em;
+  border-style: solid;
+  background-position: center;
+  border-width: 1px;
+  background-color: white;
 }
 
 .index {
@@ -277,15 +289,34 @@ h2 {
   position: absolute;
   width: 3.75em;
   height: 3.25em;
-  margin-left: 0.5px;
+  margin-left: 5px;
 }
+
+.image {
+  position: absolute;
+}
+
 
 .red { color: #ff0000; }
 
-img {
-  height: 200px;
-  width: 400px;
-  margin-left: -30px;
+.ace {
+  background-image: url("https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg");
+}
+
+.king {
+  background-image: url("http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg");
+}
+
+.queen {
+  background-image: url("http://cbr.imgix.net/2016/10/mariahtvad.jpg?auto=format&lossless=1&q=40&w=648&h=960&fit=crop");
+}
+
+.jack {
+  background-image: url("http://cdn3.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/0589_tiara_103_unit_01503r_-h_2016.jpg");
+}
+
+.front {
+  background-image: url("http://www.slate.com/content/dam/slate/articles/arts/television/2016/10/161003_TV_Luke-Cage.jpg.CROP.promo-xlarge2.jpg");
 }
 
 .textBox {
