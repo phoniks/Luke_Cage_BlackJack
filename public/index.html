@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="./styles/main.css">
-
+<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
 <head>
-  <script src="lodash.js"></script>
-  <script src="deck.js"></script>
-  <script src="card.js"></script>
-  <script src="round.js"></script>
-
-
-Try it Yourself »
-
-<script>
-  var newDeck = createDeck();
-
-  window.onload = roundCycle();
-
-console.log(newDeck.length);
-document.getElementById("dealer 1").innerHTML = "Dealer's first card " + newDeck[0].suit + "  " + newDeck[0].rank;
-document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck[2].suit + "  " + newDeck[2].rank;
-
-</script>
-
+  <script src="./index.js"></script>
 
 </head>
 
@@ -31,63 +13,67 @@ document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck
   <img src="http://vignette3.wikia.nocookie.net/marvelcinematicuniverse/images/e/e4/Marvel's_Luke_Cage_-_Transparent_Logo.png/revision/latest?cb=20160529103357">
 </header>
 
-<h3> BLACKJACK</h3>
+<h1> BLACKJACK</h1>
+<!-- <script>document.getElementById("newRound()").addEventListener("click", newRound());</script>
+<script> console.log(document.getElementById("newRound()"))</script> -->
 
 <div class="dealer-field">
-  <h4> SHADES </h4>
-  <div class="card">
-    <div class="front"></div>
+  <h2> SHADES </h2>
+  <div class="card" style="visibility:hidden;">
+    <div class="back" style="visibility:hidden;"></div>
   </div>
-  <div class="card">
-    <div class="front" style="visibility:hidden;"></div>
+  <div class="card" style="visibility:hidden;">
+    <div class="face" style="visibility:hidden;"></div>
   </div>
 </div>
-<span id="dealer 1"></span>
-<span id="dealer 2"></span>
 
 <div class="player-field">
-  <h4> LUKE </h4>
-  <div class="card">
-    <div class="front"></div>
+  <h1> LUKE </h1>
+  <div class="card" style="visibility:hidden;">
+    <div class="back"></div>
   </div>
-  <div class="card">
-    <div class="front" style="visibility:hidden;"></div>
-    <div class="113">K<br />&clubs;</div>
-    <div class="112">Q<br />&clubs;</div>
-    <div class="111">J<br />&clubs;</div>
-    <div class="110">10<br />&clubs;</div>
-    <div class="109">9<br />&clubs;</div>
-    <div class="108">8<br />&clubs;</div>
-    <div class="107">7<br />&clubs;</div>
-    <div class="106">6<br />&clubs;</div>
-    <div class="105">5<br />&clubs;</div>
-    <div class="104">4<br />&clubs;</div>
-    <div class="103">3<br />&clubs;</div>
-    <div class="102">2<br />&clubs;</div>
-    <div class="100">A<br />&clubs;</div>
-    <div class="200">A<br />&spades;</div>
-    <div class="213">K<br />&spades;</div>
-    <div class="212">Q<br />&spades;</div>
-    <div class="211">J<br />&spades;</div>
-    <div class="210">10<br />&spades;</div>
-    <div class="209">9<br />&spades;</div>
-    <div class="208">8<br />&spades;</div>
-    <div class="207">7<br />&spades;</div>
-    <div class="206">6<br />&spades;</div>
-    <div class="205">5<br />&spades;</div>
-    <div class="204">4<br />&spades;</div>
-    <div class="203">3<br />&spades;</div>
-    <div class="201">2<br />&spades;</div>
+  <div class = "player0" style="visibility:visible">
+    <div class="card">
+      <div class="face" style="visibility:hidden;"></div>
+      <div class="113">K<br />&clubs;</div>
+      <div class="112">Q<br />&clubs;</div>
+      <div class="111">J<br />&clubs;</div>
+      <div class="110">10<br />&clubs;</div>
+      <div class="109">9<br />&clubs;</div>
+      <div class="108">8<br />&clubs;</div>
+      <div class="107">7<br />&clubs;</div>
+      <div class="106">6<br />&clubs;</div>
+      <div class="105">5<br />&clubs;</div>
+      <div class="104">4<br />&clubs;</div>
+      <div class="103">3<br />&clubs;</div>
+      <div class="102">2<br />&clubs;</div>
+      <div class="100">A<br />&clubs;</div>
+      <div class="200">A<br />&spades;</div>
+      <div class="213">K<br />&spades;</div>
+      <div class="212">Q<br />&spades;</div>
+      <div class="211">J<br />&spades;</div>
+      <div class="210">10<br />&spades;</div>
+      <div class="209">9<br />&spades;</div>
+      <div class="208">8<br />&spades;</div>
+      <div class="207">7<br />&spades;</div>
+      <div class="206">6<br />&spades;</div>
+      <div class="205">5<br />&spades;</div>
+      <div class="204">4<br />&spades;</div>
+      <div class="203">3<br />&spades;</div>
+      <div class="201">2<br />&spades;</div>
+    </div>
   </div>
 </div>
 
-  <div class="card" style="visibility:hidden;">
-    <div class="front red">
-      <img class="face" src="http://cdn3.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/0589_tiara_103_unit_01503r_-h_2016.jpg" alt="" />
+<div class = "player0" style="visibility:visible">
+  <div class="card" style="visibility:visible;">
+    <div class="face red">
+      <img class="face" src="https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg" alt="" />
       <div class="300">A<br />&diams;</div>
       <img class="face" src="http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg" alt="" />
       <div class="313">K<br />&diams;</div>
       <div class="312">Q<br />&diams;</div>
+      <img class="face" src="http://cdn3.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/0589_tiara_103_unit_01503r_-h_2016.jpg" alt="" />
       <div class="311">J<br />&diams;</div>
       <div class="310">10<br />&diams;</div>
       <div class="309">9<br />&diams;</div>
@@ -112,13 +98,14 @@ document.getElementById("dealer 2").innerHTL =  "Dealer's first card " + newDeck
       <div class="403">3<br />&hearts;</div>
       <div class="402">2<br />&hearts;</div>
     </div>
+  </div>
 </div>
-
 
   <form id="controls" action>
     <div id="controlArea">
       <div id="credits" class="textBox dollars">Credits</div>
       <div id="default" class="textBox dollars">Default Bet</div>
+      <input type="button" value="Deal" onclick="newRound()">
       <input id="hit" class="button" type="reset" value="Hit">
       <input id="stay" class="button" type="reset" value="Stay" >
       <input id="double" class="button" type="reset" value="Double" >
