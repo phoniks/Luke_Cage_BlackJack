@@ -82,7 +82,7 @@ constructor(){
 createDeck() {
 
 const suits = [1,2,3,4]
-const ranks = [0,2,3,4,5,6,7,8,9,10,11,12,13]
+const ranks = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 
   let tempDeck = []
     suits.forEach(suit => {
@@ -106,6 +106,7 @@ getNextCard() {
 
 }
 
+
 class Hand {
   constructor(round){
     this.cards = []
@@ -114,34 +115,49 @@ class Hand {
     console.log('Hand created');
   }
 
+
   addCard() {
+    let playerString = ''
+    console.log('1',this.round.player.hand);
+    console.log('2',this);
+    if (this.round.player.hand == this){
+      playerString += 'player'
+    } else {
+      playerString += 'dealer'
+    }
+    console.log('playerString: ', playerString);
     let card = this.round.deck.getNextCard()
     this.cards.push(card)
-    let rank = []
-    this.cards.forEach(card => {
-      rank = []
-      let rawrank = card.rank
-      let string = '0'
-      if( rawrank < 2 || rawrank >= 10 ){
-        rank.push(rawrank)
-        console.log(rank);
-        } else{
-          rank.push(string.concat(rawrank.toString()))
-        }
-      })
+    let rank = 'rank'.concat(card.rank)
+    console.log('this.cards: ',this.cards);
     let index = this.cards.indexOf(card)
-    let playerIndex = `player${index}`
-    let suit_ = card.suit.toString()
+    console.log('index ', index);
+    let playerIndex = `${playerString}${index}`
+    console.log('playerIndex: ', playerIndex);
+    let suits = ['clubs', 'spades', 'diamonds', 'hearts']
+    console.log('card.suit ',card.suit);
+    let suit_ = suits[card.suit - 1]
+    console.log(suit_);
     console.log('rank ' ,rank, 'suit_: ', suit_);
-    let twoDigit = rank
-    console.log('2digit', twoDigit);
-    let classNumber = card.suit.toString().concat(twoDigit)
-    let class_ = '_'.concat(classNumber)
-    let keyString = `${playerIndex} ${class_}`
-    console.log('class#: ',class_);
-    // console.log('classnumber: ', `${classNumber}`);
-    console.log('elements by class_: ', document.getElementsByClassName(keyString));
-    document.getElementsByClassName(keyString)[0].setAttribute("style", "visibility:visible")
+    let keyString = `${playerIndex}`
+    let classString = `card ${keyString} ${rank} ${suit_}`
+    if (card.suit > 1){
+      classString += ' redcard'
+      console.log(classString);
+    }
+    console.log('keystring: ',keyString);
+    console.log('elements by class_: ', document.getElementsByClassName(keyString)[0]);
+    document.getElementsByClassName(keyString)[0].setAttribute("class",  classString)
+
+    classString = `card-face ${keyString} ${rank} ${suit_}`
+    document.getElementsByClassName(keyString)[0].setAttribute("class", classString)
+    let ranksForDisplay = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K']
+    let suitsForDisplay = ['&clubs;', '&spades;', '&diams;', '&hearts;']
+    let rankForDisplay = ranksForDisplay[card.rank -1]
+    console.log(rankForDisplay);
+    let suitForDisplay = suitsForDisplay[card.suit - 1]
+    document.getElementsByClassName(keyString)[0].insertAdjacentHTML('afterbegin', `<h2>${rankForDisplay} ${suitForDisplay}</h2>`);
+
     }
 
 
@@ -230,6 +246,7 @@ determineWinner(){
 }
 
 settleBets(){
+  console.log('this is player0 div: ',document.getElementsByClassName('player0'));
   console.log('this is where bets are settled');
 }
 

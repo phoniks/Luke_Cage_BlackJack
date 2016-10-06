@@ -59,7 +59,7 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 0;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .dealer1 {
@@ -67,7 +67,7 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 5.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .dealer2 {
@@ -75,70 +75,70 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 10.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer3 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 15.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer4 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 20.0em;
-  visibility: hidden
+  visibility: visible
 }
 .dealer5 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 25.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer6 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 54.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer7 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 63.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer8 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 72.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer9 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 81.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .dealer10 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 90.0em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player0 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 0;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .player1 {
@@ -146,7 +146,7 @@ button {
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 5em;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .player2 {
@@ -154,121 +154,155 @@ button {
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 10em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player3 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 15em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player4 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 20em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player5 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 25em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player6 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 30em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player7 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 35em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player8 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 40em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player9 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 45em;
-  visibility: hidden;
+  visibility: visible;
 }
 .player10 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 50em;
-  visibility: hidden;
+  visibility: visible;
 }
 
-.hearts{
+.redcard{
+  color: red
+}
 
+.card-face.hearts{
+  content: '&hearts;';
+  color: red;
 }
 
 .spades{
-
+  content: '&spades;';
 }
 
-.diamonds{
-
+.card-face.diamonds{
+  content: '&diams;';
+  color: red;
 }
 
 .clubs{
-
+  content: '&clubs;';
 }
 
-.rank00{
-
+.rank0{
+  content: 'A';
+  background-image: url("https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg");
 }
-.rank02{
-
+.rank2{
+  content: '2';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank03{
-
+.rank3{
+  content: '3';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank04{
-
+.rank4{
+  content: '4';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank05{
-
+.rank5{
+  content: '5';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank06{
-
+.rank6{
+  content: '6';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank07{
-
+.rank7{
+  content: '7';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank08{
-
+.rank8{
+  content: '8';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
-.rank09{
-
+.rank9{
+  content: '9';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
 .rank10{
-
+  content: '10';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
 }
 .rank11{
-
+  content: 'J';
+  background-image: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2016/09/29081135/LukeCage_Shades_700x300.jpg");
 }
 .rank12{
-
+  content: 'Q';
+  background-image: url("http://cbr.imgix.net/2016/10/mariahtvad.jpg?auto=format&lossless=1&q=40&w=648&h=960&fit=crop");
 }
 .rank13{
-
+  content: 'K';
+  background-image: url("http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg");
 }
 
+.card-face{
+  background-color: white;
+  border-color: #808080 #000000 #000000 #808080;
+  border-width: 1px;
+  border-style: solid;
+  background-position: center;
+  background-size: cover;
+  color: #000000;
+  font-size: 20pt;
+  position: absolute;
+  width: 4.75em;
+  height: 7.00em;
+  padding-top: 20px;
+  margin-top: 25px;
+}
 
 .card {
   background-image: url("http://img.cinemablend.com/cb/0/d/4/8/3/3/0d4833b31611c7b082dac9d1c72094a9cdbfb50ab21588564e3f294b3fed91cc.jpg");
@@ -308,8 +342,8 @@ button {
 .face {
   border: 1px solid #000000;
   position: absolute;
-  width: 3.75em;
-  height: 3.25em;
+  width: 4.75em;
+  height: 7.0em;
   margin-left: 5px;
   border-color: yellow;
 }
@@ -322,23 +356,23 @@ button {
 .red { color: #ff0000; }
 
 .ace {
-  background-image: url("https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg");
+
 }
 
 .king {
-  background-image: url("http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg");
+
 }
 
 .queen {
-  background-image: url("http://cbr.imgix.net/2016/10/mariahtvad.jpg?auto=format&lossless=1&q=40&w=648&h=960&fit=crop");
+
 }
 
 .jack {
-  background-image: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2016/09/29081135/LukeCage_Shades_700x300.jpg");
+
 }
 
 .front {
-  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+
 }
 
 .textBox {
