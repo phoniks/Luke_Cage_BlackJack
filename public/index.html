@@ -13,79 +13,1814 @@
 </header>
 
 <h1> BLACKJACK</h1>
-
-<div id="dealer-field">
-  <h2> SHADES </h2>
-  <div class="card" style="visibility:hidden;">
-    <div class="back" style="visibility:hidden;"></div>
-  </div>
-  <div class="card" style="visibility:hidden;">
-    <div class="face" style="visibility:hidden;"></div>
-  </div>
+<!-- <script>document.getElem      entById("newRound()").addEventListener("click", newRound());</script>
+<script> console.log(document.getElementById("newRound()"))</script> -->
 </div>
 
 <div id="player-field">
   <h1> LUKE </h1>
-  <div class="card" style="visibility:hidden;">
-    <div class="back"></div>
+
+<div id="player0">
+  <div class=" card player0 image 100 ace" style="visibility: hidden">
+    <h2>A<br />&clubs;</h2>
+    </div>
+  <div class=" card player0 image 113 king" style="visibility: hidden">
+    <h2>K<br />&clubs;</h2>
+    </div>
+  <div class=" card player0 image 112 queen" style="visibility: hidden">
+    <h2>Q<br />&clubs;</h2>
+    </div>
+  <div class=" card player0 image 111 jack" style="visibility: hidden">
+    <h2>J<br />&clubs;</h2>
+    </div>
+  <div class=" card player0 image 110front" style="visibility: hidden">
+      <h2>10<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 109 front" style="visibility: hidden">
+      <h2>9<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 108 front" style="visibility: hidden">
+      <h2>8<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 107 front" style="visibility: hidden">
+      <h2>7<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 106front" style="visibility: hidden">
+      <h2>6<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 105 front" style="visibility: hidden">
+      <h2>5<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 104 front" style="visibility: hidden">
+      <h2>4<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 103 front" style="visibility: hidden">
+      <h2>3<br />&clubs;</h2>
+    </div>
+    <div class=" card player0 image red 102front" style="visibility: hidden">
+      <h2>2<br />&clubs;</h2>
+    </div>
+
+
+    <div class=" card player0 image 200 ace" style="visibility:hidden;">
+    <h2>A<br />&spades;</h2>
+    </div>
+  <div class=" card player0 image 213king" style="visibility:hidden;">
+    <h2>K<br />&spades;</h2>
+    </div>
+  <div class=" card player0 image 212queen" style="visibility:hidden;">
+    <h2>Q<br />&spades;</h2>
+    </div>
+  <div class=" card player0 image 211 jack" style="visibility:hidden;">
+    <h2>J<br />&spades;</h2>
+    </div>
+  <div class=" card player0 image 210 front" style="visibility:hidden;">
+      <h2>10<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 209 front" style="visibility: hidden">
+      <h2>9<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 208 front" style="visibility: hidden">
+      <h2>8<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 207front" style="visibility: hidden">
+      <h2>7<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 206 front" style="visibility: hidden">
+      <h2>6<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 205 front" style="visibility: hidden">
+      <h2>5<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 204 front" style="visibility: hidden">
+      <h2>4<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 203front" style="visibility: hidden">
+      <h2>3<br />&spades;</h2>
+    </div>
+    <div class=" card player0 image red 202 front" style="visibility: hidden">
+      <h2>2<br />&spades;</h2>
+    </div>
+
+    <div class=" card player0 image red 300ace" style="visibility: hidden">
+      <h2>A<br />&diams;</h2>
+      </div>
+    <div class=" card player0 image red 313king" style="visibility: hidden">
+      <h2>K<br />&diams;</h2>
+      </div>
+    <div class=" card player0 image red 312queen" style="visibility: hidden">
+      <h2>Q<br />&diams;</h2>
+      </div>
+    <div class=" card player0 image red 311 jack" style="visibility: hidden">
+      <h2>J<br />&diams;</h2>
+      </div>
+    <div class=" card player0 image red 310 front" style="visibility: hidden">
+        <h2>10<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 309 front" style="visibility: hidden">
+        <h2>9<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 308 front" style="visibility: hidden">
+        <h2>8<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 307 front" style="visibility: hidden">
+        <h2>7<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 306 front" style="visibility: hidden">
+        <h2>6<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 305 front" style="visibility: hidden">
+        <h2>5<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 304 front" style="visibility: hidden">
+        <h2>4<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 303 front" style="visibility: hidden">
+        <h2>3<br />&diams;</h2>
+      </div>
+      <div class=" card player0 image red 302 front" style="visibility: hidden">
+        <h2>2<br />&diams;</h2>
+      </div>
+
+    <div class=" card player0 image red 400 ace" style="visibility: hidden">
+      <h2>A<br />&hearts;</h2>
+      </div>
+    <div class=" card player0 image red 413 king" style="visibility: hidden">
+      <h2>K<br />&hearts;</h2>
+      </div>
+    <div class=" card player0 image red 412 queen" style="visibility: hidden">
+      <h2>Q<br />&hearts;</h2>
+      </div>
+    <div class=" card player0 image red 411 jack" style="visibility: hidden">
+      <h2>J<br />&hearts;</h2>
+      </div>
+    <div class=" card player0 image red 410 front" style="visibility: hidden">
+      <h2>10<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 409 front" style="visibility: hidden">
+      <h2>9<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 408 front" style="visibility: hidden">
+      <h2>8<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 407 front" style="visibility: hidden">
+      <h2>7<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 406 front" style="visibility: hidden">
+      <h2>6<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 405 front" style="visibility: hidden">
+      <h2>5<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 404 front" style="visibility: hidden">
+      <h2>4<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 403 front" style="visibility: hidden">
+      <h2>3<br />&hearts;</h2>
+    </div>
+    <div class=" card player0 image red 402 front" style="visibility: hidden">
+      <h2>2<br />&hearts;</h2>
+    </div>
   </div>
-    <div class=" card player0 image ace">
+<div id="player1">
+    <div class=" card player1 image 100 ace" style="visibility: hidden">
       <h2>A<br />&clubs;</h2>
       </div>
-    <div class=" card player1 image king">
+    <div class=" card player1 image 113 king" style="visibility: hidden">
       <h2>K<br />&clubs;</h2>
       </div>
-    <div class=" card player2 image queen">
+    <div class=" card player1 image 112 queen" style="visibility: hidden">
       <h2>Q<br />&clubs;</h2>
       </div>
-    <div class=" card player3 image jack">
+    <div class=" card player1 image 111 jack" style="visibility: hidden">
       <h2>J<br />&clubs;</h2>
       </div>
-    <div class=" card player4 image front">
+    <div class=" card player1 image 110front" style="visibility: hidden">
         <h2>10<br />&clubs;</h2>
       </div>
+      <div class=" card player1 image red 109 front" style="visibility: hidden">
+        <h2>9<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 108 front" style="visibility: hidden">
+        <h2>8<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 107 front" style="visibility: hidden">
+        <h2>7<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 106front" style="visibility: hidden">
+        <h2>6<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 105 front" style="visibility: hidden">
+        <h2>5<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 104 front" style="visibility: hidden">
+        <h2>4<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 103 front" style="visibility: hidden">
+        <h2>3<br />&clubs;</h2>
+      </div>
+      <div class=" card player1 image red 102front" style="visibility: hidden">
+        <h2>2<br />&clubs;</h2>
+      </div>
+
+
+      <div class=" card player1 image 200 ace" style="visibility:hidden;">
+      <h2>A<br />&spades;</h2>
+      </div>
+    <div class=" card player1 image 213king" style="visibility:hidden;">
+      <h2>K<br />&spades;</h2>
+      </div>
+    <div class=" card player1 image 212queen" style="visibility:hidden;">
+      <h2>Q<br />&spades;</h2>
+      </div>
+    <div class=" card player1 image 211 jack" style="visibility:hidden;">
+      <h2>J<br />&spades;</h2>
+      </div>
+    <div class=" card player1 image 210 front" style="visibility:hidden;">
+        <h2>10<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 209 front" style="visibility: hidden">
+        <h2>9<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 208 front" style="visibility: hidden">
+        <h2>8<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 207front" style="visibility: hidden">
+        <h2>7<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 206 front" style="visibility: hidden">
+        <h2>6<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 205 front" style="visibility: hidden">
+        <h2>5<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 204 front" style="visibility: hidden">
+        <h2>4<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 203front" style="visibility: hidden">
+        <h2>3<br />&spades;</h2>
+      </div>
+      <div class=" card player1 image red 202 front" style="visibility: hidden">
+        <h2>2<br />&spades;</h2>
+      </div>
+
+      <div class=" card player1 image red 300ace" style="visibility: hidden">
+        <h2>A<br />&diams;</h2>
+        </div>
+      <div class=" card player1 image red 313king" style="visibility: hidden">
+        <h2>K<br />&diams;</h2>
+        </div>
+      <div class=" card player1 image red 312queen" style="visibility: hidden">
+        <h2>Q<br />&diams;</h2>
+        </div>
+      <div class=" card player1 image red 311 jack" style="visibility: hidden">
+        <h2>J<br />&diams;</h2>
+        </div>
+      <div class=" card player1 image red 310 front" style="visibility: hidden">
+          <h2>10<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 309 front" style="visibility: hidden">
+          <h2>9<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 308 front" style="visibility: hidden">
+          <h2>8<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 307 front" style="visibility: hidden">
+          <h2>7<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 306 front" style="visibility: hidden">
+          <h2>6<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 305 front" style="visibility: hidden">
+          <h2>5<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 304 front" style="visibility: hidden">
+          <h2>4<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 303 front" style="visibility: hidden">
+          <h2>3<br />&diams;</h2>
+        </div>
+        <div class=" card player1 image red 302 front" style="visibility: hidden">
+          <h2>2<br />&diams;</h2>
+        </div>
+
+      <div class=" card player1 image red 400 ace" style="visibility: hidden">
+        <h2>A<br />&hearts;</h2>
+        </div>
+      <div class=" card player1 image red 413 king" style="visibility: hidden">
+        <h2>K<br />&hearts;</h2>
+        </div>
+      <div class=" card player1 image red 412 queen" style="visibility: hidden">
+        <h2>Q<br />&hearts;</h2>
+        </div>
+      <div class=" card player1 image red 411 jack" style="visibility: hidden">
+        <h2>J<br />&hearts;</h2>
+        </div>
+      <div class=" card player1 image red 410 front" style="visibility: hidden">
+        <h2>10<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 409 front" style="visibility: hidden">
+        <h2>9<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 408 front" style="visibility: hidden">
+        <h2>8<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 407 front" style="visibility: hidden">
+        <h2>7<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 406 front" style="visibility: hidden">
+        <h2>6<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 405 front" style="visibility: hidden">
+        <h2>5<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 404 front" style="visibility: hidden">
+        <h2>4<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 403 front" style="visibility: hidden">
+        <h2>3<br />&hearts;</h2>
+      </div>
+      <div class=" card player1 image red 402 front" style="visibility: hidden">
+        <h2>2<br />&hearts;</h2>
+      </div>
     </div>
+
+<div id="player2">
+    <div class=" card player2 image 100 ace" style="visibility: hidden">
+      <h2>A<br />&clubs;</h2>
+      </div>
+    <div class=" card player2 image 113 king" style="visibility: hidden">
+      <h2>K<br />&clubs;</h2>
+      </div>
+    <div class=" card player2 image 112 queen" style="visibility: hidden">
+      <h2>Q<br />&clubs;</h2>
+      </div>
+    <div class=" card player2 image 111 jack" style="visibility: hidden">
+      <h2>J<br />&clubs;</h2>
+      </div>
+    <div class=" card player2 image 110front" style="visibility: hidden">
+        <h2>10<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 109 front" style="visibility: hidden">
+        <h2>9<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 108 front" style="visibility: hidden">
+        <h2>8<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 107 front" style="visibility: hidden">
+        <h2>7<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 106front" style="visibility: hidden">
+        <h2>6<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 105 front" style="visibility: hidden">
+        <h2>5<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 104 front" style="visibility: hidden">
+        <h2>4<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 103 front" style="visibility: hidden">
+        <h2>3<br />&clubs;</h2>
+      </div>
+      <div class=" card player2 image red 102front" style="visibility: hidden">
+        <h2>2<br />&clubs;</h2>
+      </div>
+
+
+      <div class=" card player2 image 200 ace" style="visibility:hidden;">
+      <h2>A<br />&spades;</h2>
+      </div>
+    <div class=" card player2 image 213king" style="visibility:hidden;">
+      <h2>K<br />&spades;</h2>
+      </div>
+    <div class=" card player2 image 212queen" style="visibility:hidden;">
+      <h2>Q<br />&spades;</h2>
+      </div>
+    <div class=" card player2 image 211 jack" style="visibility:hidden;">
+      <h2>J<br />&spades;</h2>
+      </div>
+    <div class=" card player2 image 210 front" style="visibility:hidden;">
+        <h2>10<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 209 front" style="visibility: hidden">
+        <h2>9<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 208 front" style="visibility: hidden">
+        <h2>8<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 207front" style="visibility: hidden">
+        <h2>7<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 206 front" style="visibility: hidden">
+        <h2>6<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 205 front" style="visibility: hidden">
+        <h2>5<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 204 front" style="visibility: hidden">
+        <h2>4<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 203front" style="visibility: hidden">
+        <h2>3<br />&spades;</h2>
+      </div>
+      <div class=" card player2 image red 202 front" style="visibility: hidden">
+        <h2>2<br />&spades;</h2>
+      </div>
+
+      <div class=" card player2 image red 300ace" style="visibility: hidden">
+        <h2>A<br />&diams;</h2>
+        </div>
+      <div class=" card player2 image red 313king" style="visibility: hidden">
+        <h2>K<br />&diams;</h2>
+        </div>
+      <div class=" card player2 image red 312queen" style="visibility: hidden">
+        <h2>Q<br />&diams;</h2>
+        </div>
+      <div class=" card player2 image red 311 jack" style="visibility: hidden">
+        <h2>J<br />&diams;</h2>
+        </div>
+      <div class=" card player2 image red 310 front" style="visibility: hidden">
+          <h2>10<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 309 front" style="visibility: hidden">
+          <h2>9<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 308 front" style="visibility: hidden">
+          <h2>8<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 307 front" style="visibility: hidden">
+          <h2>7<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 306 front" style="visibility: hidden">
+          <h2>6<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 305 front" style="visibility: hidden">
+          <h2>5<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 304 front" style="visibility: hidden">
+          <h2>4<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 303 front" style="visibility: hidden">
+          <h2>3<br />&diams;</h2>
+        </div>
+        <div class=" card player2 image red 302 front" style="visibility: hidden">
+          <h2>2<br />&diams;</h2>
+        </div>
+
+      <div class=" card player2 image red 400 ace" style="visibility: hidden">
+        <h2>A<br />&hearts;</h2>
+        </div>
+      <div class=" card player2 image red 413 king" style="visibility: hidden">
+        <h2>K<br />&hearts;</h2>
+        </div>
+      <div class=" card player2 image red 412 queen" style="visibility: hidden">
+        <h2>Q<br />&hearts;</h2>
+        </div>
+      <div class=" card player2 image red 411 jack" style="visibility: hidden">
+        <h2>J<br />&hearts;</h2>
+        </div>
+      <div class=" card player2 image red 410 front" style="visibility: hidden">
+        <h2>10<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 409 front" style="visibility: hidden">
+        <h2>9<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 408 front" style="visibility: hidden">
+        <h2>8<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 407 front" style="visibility: hidden">
+        <h2>7<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 406 front" style="visibility: hidden">
+        <h2>6<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 405 front" style="visibility: hidden">
+        <h2>5<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 404 front" style="visibility: hidden">
+        <h2>4<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 403 front" style="visibility: hidden">
+        <h2>3<br />&hearts;</h2>
+      </div>
+      <div class=" card player2 image red 402 front" style="visibility: hidden">
+        <h2>2<br />&hearts;</h2>
+      </div>
+</div>
+
+<div id="player3">
+<div class=" card player3 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player3 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player3 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player3 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player3 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player3 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player3 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player3 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player3 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player3 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player3 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player3 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player3 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player3 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player3 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player3 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player3 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player3 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player3 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player3 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player3 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player3 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player3 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player3 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+<div id="player4">
+<div class=" card player4 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player4 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player4 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player4 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player4 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player4 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player4 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player4 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player4 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player4 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player4 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player4 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player4 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player4 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player4 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player4 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player4 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player4 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player4 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player4 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player4 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player4 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player4 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player4 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
   </div>
 </div>
 
-<div class="card" style="visibility:visible;">
-      <div class=" card dealer0 image red ace">
-        <h2>A<br />&diams;</h2>
-        </div>
-      <div class=" card dealer1 image red king">
-        <h2>K<br />&diams;</h2>
-        </div>
-      <div class=" card dealer2 image red queen">
-        <h2>Q<br />&diams;</h2>
-        </div>
-      <div class=" card dealer3 image red jack">
-        <h2>J<br />&diams;</h2>
-        </div>
-      <div class=" card dealer4 image red front">
-          <h2>10<br />&diams;</h2>
-        </div>
-      <div class=" card image red ace" style="visibility: hidden">
-        <h2>A<br />&hearts;</h2>
-        </div>
-      <div class=" card image red king" style="visibility: hidden">
-        <h2>K<br />&hearts;</h2>
-        </div>
-      <div class=" card image red queen" style="visibility: hidden">
-        <h2>Q<br />&hearts;</h2>
-        </div>
-      <div class=" card image red jack" style="visibility: hidden">
-        <h2>J<br />&hearts;</h2>
-        </div>
-      <div class=" card image red front" style="visibility: hidden">
-        <h2>10<br />&hearts;</h2>
-      </div>
+<div id="player5">
+<div class=" card player5 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player5 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player5 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player5 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player5 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player5 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player5 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player5 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player5 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player5 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player5 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player5 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player5 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player5 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player5 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player5 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player5 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player5 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player5 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player5 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player5 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player5 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player5 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player5 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
 </div>
+
+<div id="player6">
+<div class=" card player6 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player6 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player6 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player6 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player6 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player6 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player6 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player6 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player6 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player6 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player6 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player6 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player6 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player6 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player6 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player6 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player6 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player6 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player6 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player6 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player6 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player6 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player6 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player6 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+
+<div id="player7">
+<div class=" card player7 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player7 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player7 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player7 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player7 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player7 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player7 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player7 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player7 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player7 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player7 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player7 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player7 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player7 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player7 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player7 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player7 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player7 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player7 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player7 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player7 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player7 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player7 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player7 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+
+<div id="player8">
+<div class=" card player8 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player8 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player8 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player8 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player8 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player8 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player8 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player8 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player8 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player8 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player8 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player8 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player8 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player8 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player8 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player8 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player8 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player8 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player8 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player8 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player8 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player8 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player8 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player8 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+
+<div id="player9">
+<div class=" card player9 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player9 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player9 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player9 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player9 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player9 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player9 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player9 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player9 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player9 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player9 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player9 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player9 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player9 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player9 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player9 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player9 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player9 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player9 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player9 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player9 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player9 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player9 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player9 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+
+<div id="player10">
+<div class=" card player10 image 100 ace" style="visibility: hidden">
+  <h2>A<br />&clubs;</h2>
+  </div>
+<div class=" card player10 image 113 king" style="visibility: hidden">
+  <h2>K<br />&clubs;</h2>
+  </div>
+<div class=" card player10 image 112 queen" style="visibility: hidden">
+  <h2>Q<br />&clubs;</h2>
+  </div>
+<div class=" card player10 image 111 jack" style="visibility: hidden">
+  <h2>J<br />&clubs;</h2>
+  </div>
+<div class=" card player10 image 110front" style="visibility: hidden">
+    <h2>10<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 109 front" style="visibility: hidden">
+    <h2>9<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 108 front" style="visibility: hidden">
+    <h2>8<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 107 front" style="visibility: hidden">
+    <h2>7<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 106front" style="visibility: hidden">
+    <h2>6<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 105 front" style="visibility: hidden">
+    <h2>5<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 104 front" style="visibility: hidden">
+    <h2>4<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 103 front" style="visibility: hidden">
+    <h2>3<br />&clubs;</h2>
+  </div>
+  <div class=" card player10 image red 102front" style="visibility: hidden">
+    <h2>2<br />&clubs;</h2>
+  </div>
+
+
+  <div class=" card player10 image 200 ace" style="visibility:hidden;">
+  <h2>A<br />&spades;</h2>
+  </div>
+<div class=" card player10 image 213king" style="visibility:hidden;">
+  <h2>K<br />&spades;</h2>
+  </div>
+<div class=" card player10 image 212queen" style="visibility:hidden;">
+  <h2>Q<br />&spades;</h2>
+  </div>
+<div class=" card player10 image 211 jack" style="visibility:hidden;">
+  <h2>J<br />&spades;</h2>
+  </div>
+<div class=" card player10 image 210 front" style="visibility:hidden;">
+    <h2>10<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 209 front" style="visibility: hidden">
+    <h2>9<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 208 front" style="visibility: hidden">
+    <h2>8<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 207front" style="visibility: hidden">
+    <h2>7<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 206 front" style="visibility: hidden">
+    <h2>6<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 205 front" style="visibility: hidden">
+    <h2>5<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 204 front" style="visibility: hidden">
+    <h2>4<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 203front" style="visibility: hidden">
+    <h2>3<br />&spades;</h2>
+  </div>
+  <div class=" card player10 image red 202 front" style="visibility: hidden">
+    <h2>2<br />&spades;</h2>
+  </div>
+
+  <div class=" card player10 image red 300ace" style="visibility: hidden">
+    <h2>A<br />&diams;</h2>
+    </div>
+  <div class=" card player10 image red 313king" style="visibility: hidden">
+    <h2>K<br />&diams;</h2>
+    </div>
+  <div class=" card player10 image red 312queen" style="visibility: hidden">
+    <h2>Q<br />&diams;</h2>
+    </div>
+  <div class=" card player10 image red 311 jack" style="visibility: hidden">
+    <h2>J<br />&diams;</h2>
+    </div>
+  <div class=" card player10 image red 310 front" style="visibility: hidden">
+      <h2>10<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 309 front" style="visibility: hidden">
+      <h2>9<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 308 front" style="visibility: hidden">
+      <h2>8<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 307 front" style="visibility: hidden">
+      <h2>7<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 306 front" style="visibility: hidden">
+      <h2>6<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 305 front" style="visibility: hidden">
+      <h2>5<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 304 front" style="visibility: hidden">
+      <h2>4<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 303 front" style="visibility: hidden">
+      <h2>3<br />&diams;</h2>
+    </div>
+    <div class=" card player10 image red 302 front" style="visibility: hidden">
+      <h2>2<br />&diams;</h2>
+    </div>
+
+  <div class=" card player10 image red 400 ace" style="visibility: hidden">
+    <h2>A<br />&hearts;</h2>
+    </div>
+  <div class=" card player10 image red 413 king" style="visibility: hidden">
+    <h2>K<br />&hearts;</h2>
+    </div>
+  <div class=" card player10 image red 412 queen" style="visibility: hidden">
+    <h2>Q<br />&hearts;</h2>
+    </div>
+  <div class=" card player10 image red 411 jack" style="visibility: hidden">
+    <h2>J<br />&hearts;</h2>
+    </div>
+  <div class=" card player10 image red 410 front" style="visibility: hidden">
+    <h2>10<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 409 front" style="visibility: hidden">
+    <h2>9<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 408 front" style="visibility: hidden">
+    <h2>8<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 407 front" style="visibility: hidden">
+    <h2>7<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 406 front" style="visibility: hidden">
+    <h2>6<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 405 front" style="visibility: hidden">
+    <h2>5<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 404 front" style="visibility: hidden">
+    <h2>4<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 403 front" style="visibility: hidden">
+    <h2>3<br />&hearts;</h2>
+  </div>
+  <div class=" card player10 image red 402 front" style="visibility: hidden">
+    <h2>2<br />&hearts;</h2>
+  </div>
+</div>
+
+
+
+  </div>
+
 
   <form id="controls" action>
     <div id="controlArea">
       <div id="credits" class="textBox dollars">Credits</div>
       <div id="default" class="textBox dollars">Default Bet</div>
-      <input id="deal" class="button" type="reset" value="Deal" >
+      <input id="deal" class="button" value="Deal" type="button" onclick="start()" >
       <input id="hit" class="button" type="reset" value="Hit">
       <input id="stay" class="button" type="reset" value="Stay" >
       <input id="double" class="button" type="reset" value="Double" >

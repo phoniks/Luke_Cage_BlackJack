@@ -59,7 +59,7 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 0;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .dealer1 {
@@ -67,7 +67,7 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 5.0em;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .dealer2 {
@@ -75,20 +75,21 @@ button {
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 10.0em;
-  visibility: visible;
+  visibility: hidden;
 }
 .dealer3 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 15.0em;
-  visibility: visible;
+  visibility: hidden;
 }
 .dealer4 {
   position: absolute;
   padding-top: 20px;
   margin-top: 150px;
   margin-left: 20.0em;
+  visibility: hidden
 }
 .dealer5 {
   position: absolute;
@@ -137,7 +138,7 @@ button {
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 0;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .player1 {
@@ -145,7 +146,7 @@ button {
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 5em;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .player2 {
@@ -153,21 +154,21 @@ button {
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 10em;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 .player3 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 15em;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 .player4 {
   position: absolute;
   padding-top: 20px;
   margin-top: 25px;
   margin-left: 20em;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 .player5 {
   position: absolute;
