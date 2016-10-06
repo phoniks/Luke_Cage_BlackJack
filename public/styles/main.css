@@ -4,19 +4,304 @@ header {
   background-image: url("http://img.cinemablend.com/cb/0/d/4/8/3/3/0d4833b31611c7b082dac9d1c72094a9cdbfb50ab21588564e3f294b3fed91cc.jpg");
   background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 100px;
   width: 100%;
-  padding: 05px;
+  font-family: 'Ruslan Display', cursive;
 }
 
-h3 {
+h1 {
   position: relative;
   text-align: center;
+  font-family: 'Ruslan Display', cursive;
+  text-shadow: 1px 1px 2px yellow;
 }
 
-.player-field {
+h2 {
+  font-family: 'Ruslan Display', cursive;
+  position: absolute;;
+  bottom: 60px;
+  left: 0px;
+  width: 100%;
+  border-color: yellow;
+  border: 0.5px;
+  text-shadow: 1px 1px 2px yellow;
+}
+
+#player-field {
   position: absolute;
-  margin-top: 300px;
+  margin-top: 400px;
+}
+
+#dealer-field {
+  position: absolute;
+  margin-top: 100px;
+}
+
+#controls {
+  position: absolute;
+  margin-top: 320px;
+  background-color: black;
+  width: 100%;
+}
+
+.button {
+  background-color: yellow;
+  color: black;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+}
+
+.dealer0 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 0;
+  visibility: visible;
+}
+
+.dealer1 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 5.0em;
+  visibility: visible;
+}
+
+.dealer2 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 10.0em;
+  visibility: visible;
+}
+.dealer3 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 15.0em;
+  visibility: visible;
+}
+.dealer4 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 20.0em;
+  visibility: visible
+}
+.dealer5 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 25.0em;
+  visibility: visible;
+}
+.dealer6 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 54.0em;
+  visibility: visible;
+}
+.dealer7 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 63.0em;
+  visibility: visible;
+}
+.dealer8 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 72.0em;
+  visibility: visible;
+}
+.dealer9 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 81.0em;
+  visibility: visible;
+}
+.dealer10 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 150px;
+  margin-left: 90.0em;
+  visibility: visible;
+}
+.player0 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 0;
+  visibility: visible;
+}
+
+.player1 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 5em;
+  visibility: visible;
+}
+
+.player2 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 10em;
+  visibility: visible;
+}
+.player3 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 15em;
+  visibility: visible;
+}
+.player4 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 20em;
+  visibility: visible;
+}
+.player5 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 25em;
+  visibility: visible;
+}
+.player6 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 30em;
+  visibility: visible;
+}
+.player7 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 35em;
+  visibility: visible;
+}
+.player8 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 40em;
+  visibility: visible;
+}
+.player9 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 45em;
+  visibility: visible;
+}
+.player10 {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 25px;
+  margin-left: 50em;
+  visibility: visible;
+}
+
+.redcard{
+  color: red
+}
+
+.card-face.hearts{
+  content: '&hearts;';
+  color: red;
+}
+
+.spades{
+  content: '&spades;';
+}
+
+.card-face.diamonds{
+  content: '&diams;';
+  color: red;
+}
+
+.clubs{
+  content: '&clubs;';
+}
+
+.rank0{
+  content: 'A';
+  background-image: url("https://assets3.thrillist.com/v1/image/1775533/size/tmg-article_default_mobile.jpg");
+}
+.rank2{
+  content: '2';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank3{
+  content: '3';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank4{
+  content: '4';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank5{
+  content: '5';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank6{
+  content: '6';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank7{
+  content: '7';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank8{
+  content: '8';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank9{
+  content: '9';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank10{
+  content: '10';
+  background-image: url("https://larryfire.files.wordpress.com/2013/11/cage.png");
+}
+.rank11{
+  content: 'J';
+  background-image: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2016/09/29081135/LukeCage_Shades_700x300.jpg");
+}
+.rank12{
+  content: 'Q';
+  background-image: url("http://cbr.imgix.net/2016/10/mariahtvad.jpg?auto=format&lossless=1&q=40&w=648&h=960&fit=crop");
+}
+.rank13{
+  content: 'K';
+  background-image: url("http://www.thewrap.com/wp-content/uploads/2016/10/judas-bullet-diamondback-luke-cage.jpg");
+}
+
+.card-face{
+  background-color: white;
+  border-color: #808080 #000000 #000000 #808080;
+  border-width: 1px;
+  border-style: solid;
+  background-position: center;
+  background-size: cover;
+  color: #000000;
+  font-size: 20pt;
+  position: absolute;
+  width: 4.75em;
+  height: 7.00em;
+  padding-top: 20px;
+  margin-top: 25px;
 }
 
 .card {
@@ -35,10 +320,14 @@ h3 {
   margin-top: 25px;
 }
 
-.front {
+.back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 4.75em;
+  height: 7.00em;
+  border-style: solid;
+  background-position: center;
+  border-width: 1px;
+  background-color: white;
 }
 
 .index {
@@ -54,13 +343,81 @@ h3 {
   border: 1px solid #000000;
   position: absolute;
   width: 4.75em;
-  height: 7.00em;
+  height: 7.0em;
+  margin-left: 5px;
+  border-color: yellow;
 }
+
+.image {
+  position: absolute;
+}
+
 
 .red { color: #ff0000; }
 
-img {
-  height: 200px;
-  width: 400px;
-  margin-left: -30px;
+.ace {
+
+}
+
+.king {
+
+}
+
+.queen {
+
+}
+
+.jack {
+
+}
+
+.front {
+
+}
+
+.textBox {
+  background-color: #ffffc0;
+  border-color: #006000 #90f090 #90f090 #006000;
+  border-style: solid;
+  border-width: 1px;
+  clear: right;
+  color: #000000;
+  float: right;
+  font-family: "Times New Roman", serif;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: .5em;
+  padding: .1em;
+  text-align: center;
+  width: 12em;
+
+}
+
+button {
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+#controlArea {
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+  font-family: 'Ruslan Display', cursive;
+}
+
+input.button {
+  margin-top: .25em
+  width: 8em;
 }
