@@ -54,6 +54,10 @@
 
 	var _game2 = _interopRequireDefault(_game);
 
+	var _player = __webpack_require__(3);
+
+	var _player2 = _interopRequireDefault(_player);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function displayDealerCard() {}
@@ -68,15 +72,17 @@
 	  var game = new _game2.default('Player');
 	  document.getElementById("deal").setAttribute("onclick", "startRound()");
 	  return game;
+	  console.log("player ---->", game.player);
 	}
 
-	function startRound() {
-	  new Round();
+	function setHit() {
+	  document.getElementById("hit").setAttribute("onclick", "hit()");
 	}
 
 	(0, _jquery2.default)(document).ready(function () {
 	  (0, _jquery2.default)('#deal').click(function (event) {
-	    return start();
+	    start();
+	    setHit();
 	  });
 	});
 
@@ -10466,6 +10472,10 @@
 
 	var _hand2 = _interopRequireDefault(_hand);
 
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -10492,6 +10502,7 @@
 	      this.getDealerAction();
 	      this.determineWinner();
 	      this.settleBets();
+	      this.clearFields();
 
 	      var options = {};
 	      options.dealer = this.dealer;
@@ -10558,6 +10569,11 @@
 	        this.player.hand.addCard();
 	        this.dealer.hand.addCard();
 	      }
+	    }
+	  }, {
+	    key: 'clearFields',
+	    value: function clearFields() {
+	      (0, _jquery2.default)('[id$=field]').empty();
 	    }
 	  }]);
 

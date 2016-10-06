@@ -1,5 +1,6 @@
 import Deck from './deck'
 import Hand from './hand'
+import $ from 'jquery'
 
 class Round {
   constructor(options){
@@ -19,6 +20,7 @@ class Round {
     this.getDealerAction()
     this.determineWinner()
     this.settleBets()
+    this.clearFields()
 
     const options = {}
     options.dealer = this.dealer
@@ -80,6 +82,12 @@ class Round {
       this.dealer.hand.addCard()
     }
   }
+
+  clearFields() {
+    $( '[id$=field]' ).empty()
+  }
 }
+
+
 
 export default Round
