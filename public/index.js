@@ -119,24 +119,31 @@ class Hand {
     this.cards.push(card)
     let rank = []
     this.cards.forEach(card => {
+      rank = []
       let rawrank = card.rank
       let string = '0'
-      if(rawrank > 10 || rawrank < 2){
+      if( rawrank < 2 || rawrank >= 10 ){
         rank.push(rawrank)
+        console.log(rank);
         } else{
           rank.push(string.concat(rawrank.toString()))
         }
       })
     let index = this.cards.indexOf(card)
-    let whatsit = `player${index}`
-
+    let playerIndex = `player${index}`
+    let suit_ = card.suit.toString()
+    console.log('rank ' ,rank, 'suit_: ', suit_);
     let twoDigit = rank
+    console.log('2digit', twoDigit);
     let classNumber = card.suit.toString().concat(twoDigit)
-    console.log(whatsit);
-    console.log(classNumber);
-    console.log(document.getElementsByClassName(whatsit, classNumber));
-    document.getElementsByClassName(whatsit, classNumber).style.visibility = "visible"
+    let class_ = '_'.concat(classNumber)
+    let keyString = `${playerIndex} ${class_}`
+    console.log('class#: ',class_);
+    // console.log('classnumber: ', `${classNumber}`);
+    console.log('elements by class_: ', document.getElementsByClassName(keyString));
+    document.getElementsByClassName(keyString)[0].setAttribute("style", "visibility:visible")
     }
+
 
   clearCards() {
     this.cards = []
