@@ -46,11 +46,11 @@
 
 	'use strict';
 
-	var _jquery = __webpack_require__(2);
+	var _jquery = __webpack_require__(1);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _game = __webpack_require__(3);
+	var _game = __webpack_require__(2);
 
 	var _game2 = _interopRequireDefault(_game);
 
@@ -82,27 +82,6 @@
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Card = function Card(suit, rank) {
-	  _classCallCheck(this, Card);
-
-	  this.suit = suit;
-	  this.rank = rank;
-	};
-
-	exports.default = Card;
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10328,7 +10307,7 @@
 
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10339,15 +10318,15 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _player = __webpack_require__(4);
+	var _player = __webpack_require__(3);
 
 	var _player2 = _interopRequireDefault(_player);
 
-	var _dealer = __webpack_require__(5);
+	var _dealer = __webpack_require__(4);
 
 	var _dealer2 = _interopRequireDefault(_dealer);
 
-	var _round = __webpack_require__(6);
+	var _round = __webpack_require__(5);
 
 	var _round2 = _interopRequireDefault(_round);
 
@@ -10380,7 +10359,7 @@
 	exports.default = Game;
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10427,7 +10406,7 @@
 	exports.default = Player;
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10436,7 +10415,7 @@
 	  value: true
 	});
 
-	var _player = __webpack_require__(4);
+	var _player = __webpack_require__(3);
 
 	var _player2 = _interopRequireDefault(_player);
 
@@ -10468,7 +10447,7 @@
 	exports.default = Dealer;
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10479,7 +10458,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _deck = __webpack_require__(7);
+	var _deck = __webpack_require__(6);
 
 	var _deck2 = _interopRequireDefault(_deck);
 
@@ -10588,7 +10567,7 @@
 	exports.default = Round;
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10599,7 +10578,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _card = __webpack_require__(1);
+	var _card = __webpack_require__(7);
 
 	var _card2 = _interopRequireDefault(_card);
 
@@ -10677,6 +10656,27 @@
 	}();
 
 	exports.default = Deck;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Card = function Card(suit, rank) {
+	  _classCallCheck(this, Card);
+
+	  this.suit = suit;
+	  this.rank = rank;
+	};
+
+	exports.default = Card;
 
 /***/ },
 /* 8 */
