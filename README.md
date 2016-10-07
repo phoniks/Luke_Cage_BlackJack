@@ -6,12 +6,12 @@ Marvel's Luke Cage needs your help against Cottonmouth, Diamondback, Shades, Mar
 
 # Specs
 
-- [ ] Player can play basic BlackJack (hit, stay, double-down) with their favorite Luke Cage characters
+- [x] Player can play basic BlackJack (hit, stay, double-down) with their favorite Luke Cage characters
 - [ ] Player can increase/decrease bets by $5
-- [ ] Game has one player vs. Shades as dealer
+- [x] Game has one player vs. Shades as dealer
 
 # Quality Rubric
 
-- [ ] Code is clean and readable
-- [ ] Website display using HTML/CSS
+- [x] Code is clean and readable
+- [x] Website display using HTML/CSS
 
