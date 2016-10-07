@@ -1,26 +1,28 @@
 import Deck from './deck'
 import Hand from './hand'
 import $ from 'jquery'
+import Player from './player'
 
 class Round {
   constructor(options){
     this.number = (options.number +1) || 1
     this.dealer = options.dealer
     this.player = options.player
+    this.deck = options.deck
     this.start()
-    console.log('Round started');
+    console.log('Round started')
+
   }
 
   start(){
-    this.deck = new Deck()
 
     this.deal()
     console.log('hands: ', this.player.hand, this.dealer.hand)
-    this.getPlayerAction()
-    this.getDealerAction()
-    this.determineWinner()
-    this.settleBets()
-    this.clearFields()
+    // this.getPlayerAction()
+    // this.getDealerAction()
+    // this.determineWinner()
+    // this.settleBets()
+    // this.clearFields()
 
     const options = {}
     options.dealer = this.dealer
@@ -28,30 +30,10 @@ class Round {
     options.player = this.player
     }
 
-  getActions(player, dealer){
-    while(this.player.hand.stay === false || this.dealer.hand.stay === false ){
-      if(player.hand.stay === false) {
-        getPlayerAction()
-      }
 
-      if(dealer.hand.stay === false){
-        getDealerAction()
-      }
-    }
-  }
-
-  getPlayerAction(){
-    if (this.player.hand.value() < 16){
-      console.log('PLAYER action')
-      return this.player.hit()
-    } else {
-      return this.player.stay()
-    }
-  }
 
   getDealerAction(){
     if (this.dealer.hand.value() < 16){
-      console.log('Dealer action')
       return this.dealer.hit()
     } else {
       return this.dealer.stay()
@@ -62,9 +44,13 @@ class Round {
     let playerHand = this.player.hand.value()
     let dealerHand = this.dealer.hand.value()
     if ( dealerHand  > 21|| playerHand > dealerHand){
-      console.log('Player wins!')
+      alert('Player wins!')
     } else if (playerHand < dealerHand){
-      console.log('Dealer wins')
+      alert('Dealer wins')
+    } else if (dealerHand.isBlackJack()){
+      alert('BlackJack Fool!')
+    } else if (playerHand.isBlackJack()){
+      alert('Luke Cage BlackJack! Sweet Christmas!')
     }
   }
 
@@ -74,12 +60,19 @@ class Round {
   }
 
   deal(){
-    this.player.hand = new Hand(this)
-    this.dealer.hand = new Hand(this)
+    let playerHand =  this.player.hand = new Hand(this)
+    let dealerHand =  this.dealer.hand = new Hand(this)
     this.deck.cards.pop()
     for (let i=0; i<2; i++){
       this.player.hand.addCard()
       this.dealer.hand.addCard()
+    }
+    if (playerHand.value() === 21 && dealerHand.value() === 21){
+      alert("You pushed! Sweet Christmas!")
+    } else if (playerHand.value() === 21){
+      alert('BlackJack!')
+    } else if (dealerHand.value() === 21){
+      alert('Shades is shady!')
     }
   }
 

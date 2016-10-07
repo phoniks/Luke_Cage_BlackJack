@@ -1,20 +1,14 @@
 import Player from './player'
 import Dealer from './dealer'
 import Round from './round'
+import Deck from './deck'
 
 class Game {
-  constructor(options){
-    this.user = options
+  constructor(round, player){
     this.bet = 50
-    this.init()
+    this.player  = player
+    this.round = round
   }
-
-  init(){
-      let player = new Player({name: "Carl Lucas"})
-      let dealer = new Dealer({name: 'Dealer'})
-      let round = new Round({dealer: dealer,  player: player })
-      return round
-    }
 }
 
 export default Game

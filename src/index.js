@@ -1,6 +1,16 @@
 import $ from 'jquery'
 import Game from './game/game'
 import Player from './game/player'
+import Round from './game/round'
+import Deck from './game/deck'
+import Dealer from './game/dealer'
+import Hand from './game/hand'
+
+let deck = new Deck()
+let player = new Player({name: "Carl Lucas", bet: 50})
+let dealer = new Dealer({name: 'Dealer'})
+
+
 
 function displayDealerCard () {
 }
@@ -13,20 +23,42 @@ function increaseBet(player){
   player.betMore()
 }
 
-function start(){
-  const game = new Game('Player')
-  document.getElementById("deal").setAttribute("onclick", "startRound()");
-  return game
-  console.log("player ---->", game.player)
-}
-
 function setHit(){
   document.getElementById("hit").setAttribute("onclick", "hit()");
 }
 
+function start(){
+  let round = new Round({dealer: dealer,  player: player, deck: deck })
+  new Game(round, player)
+}
+
+function playerHit(){
+  document.getElementById('hit').addEventListener('click', player.hit())
+}
+
+function playerDouble(){
+  document.getElementById('double').addEventListener('click', player.double())
+}
+
+function playerStay(){
+  document.getElementById('double').addEventListener('click', player.stay())
+}
+
 $(document).ready( () => {
+
   $('#deal').click( event => {
     start()
-    setHit()
+  })
+
+  $('#hit').click( event => {
+    playerHit()
+  })
+
+  $('#double').click(event => {
+    playerDouble()
+  })
+
+  $('#stay').click(event => {
+    playerStay()
   })
 })
